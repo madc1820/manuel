@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | Diseñador Multimedia</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Encabezado */
+header{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+/* Secciones */
+section{
+    padding:50px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+#sobre-mi img{
+    width:200px;
+    border-radius:50%;
+    display:block;
+    margin:20px auto;
+}
+img{border-radius:50%;}
+/* Tarjetas */
+
+.contenedor{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.tarjeta{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img,
+.tarjeta video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+.tarjeta h3{
+    padding:15px;
+}
+
+.tarjeta p{
+    padding:0 15px 20px;
+}
+
+/* Botón */
+
+button{
+    background:#0077ff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#005ecc;
+}
+
+/* Pie */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    .contenedor{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>MADC</h1>
+<h1>PRODUTION</h1>
+<p>Diseñador Multimedia</p>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#sobre">Sobre mí</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section id="inicio">
+
+<h2>Bienvenido</h2>
+
+<p>
+Soy diseñador multimedia especializado en diseño gráfico,
+edición de video, fotografía, animación y creación de contenido digital.
+</p>
+
+</section>
+
+<section id="sobre">
+
+<h2>Sobre mí</h2>
+
+<img src="YO.png" width="200" alt="Foto de perfil">
+
+<p style="text-align:center;">
+Aquí puedes escribir una descripción sobre ti, tu experiencia,
+habilidades y programas que manejas como Photoshop,
+Illustrator, Premiere Pro, After Effects, Blender, Figma, etc.
+</p>
+
+</section>
+
+<section id="proyectos">
+
+<h2>Mis Proyectos</h2>
+
+<div class="contenedor">
+
+<div class="tarjeta">
+<img src="logo IW.png">
+<h3>Diseño de Marca</h3>
+<p>Creación de identidad visual y logotipos.</p>
+</div>
+
+<div class="tarjeta">
+
+    <video controls>
+        <source src="vid.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+
+    <h3>Edición de Video</h3>
+
+    <p>Videos corporativos y promocionales.</p>
+
+</div>
+
+<div class="tarjeta">
+<img src="GIF GATO.webp">
+<h3>Animación</h3>
+<p>Motion Graphics y animaciones para redes sociales.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p><strong>Email:</strong> correo@ejemplo.com</p>
+
+<p><strong>Teléfono:</strong> +57 300 000 0000</p>
+
+<button onclick="mensaje()">
+Enviar mensaje
+</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 - Portafolio Diseñador Multimedia</p>
+
+</footer>
+
+<script>
+function mensaje(){
+    alert("¡Gracias por visitar mi portafolio!");
+}
+</script>
+
+</body>
+</html>
